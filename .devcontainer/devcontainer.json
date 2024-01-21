@@ -1,0 +1,16 @@
+{
+    "name": "staysafe",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "editorconfig.editorconfig",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/go:1": {}
+    },
+    "postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
+}
